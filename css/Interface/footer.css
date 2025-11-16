@@ -15,3 +15,17 @@
     text-align: center;
     border-top: 1px solid #e7e7e7;
 }
+
+
+.logo-footer img {
+    width: 150px;
+    height: auto;
+}
+
+
+.contato .imagem {
+    width: 36px;
+    height: auto;
+    margin: 8px 6px;
+    vertical-align: middle;
+}
