@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    gap: 20px;
+    background-color: #004d3d;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .cabeca {
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+header h1, header h2, header h3 {
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.logo-header img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.informacao {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: start;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #004d3d;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.informacao img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+
+.logo-footer img {
+
+    width: 150px;
+    height: auto;
+}
+
+
+.contato .imagem {
+    width: 36px;
+    height: auto;
+    margin: 8px 6px;
+    vertical-align: middle;
+}
+
+.contato {
+    text-align: center;
+    color: #ffffff;
+}
+
+.contato a { 
+    display: inline-block;
+}
