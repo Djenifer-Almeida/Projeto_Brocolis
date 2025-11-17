@@ -52,7 +52,7 @@
         }
 
         .header-logo {
-            height: 45px;
+            height: 56px;
             object-fit: contain;
             transition: var(--transition);
         }
@@ -268,7 +268,7 @@
             }
 
             .header-logo {
-                height: 35px;
+                height: 48px;
             }
         }
 
