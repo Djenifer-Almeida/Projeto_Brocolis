@@ -1,21 +1,44 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const listaprod = document.getElementById("listaprod").innerHTML;
-      const newListItem = listaprod.createElement('li');
 
-        // 2. Set the text content of the new <li>
-        newListItem.textContent = "hiii";
+// para conseguirmos escalar com os produtos, essa função vai redenrizar o tanto de itens da lista em produtos.js
+// apenas é preciso adicioinar as informações e endereços das imagens
 
-        // 3. Append the new <li> to the <ul>
-        listaprod.appendChild(newListItem);
+function abrirProduto(id) {
+    window.location.href = `VerMaisProdutos.html?id=${id}`;
+}
 
 
-})
-const produtos =
-    [    
-    { nome: "produto1", valor: 500 },
-    { nome: "pro", valor: 5001 },
-    { nome: "prod", valor: 5200 },
-    { nome: "produ", valor: 5030 },
-    { nome: "produt", valor: 5040 },
-    { nome: "produto", valor: 5500 }
-    ]
+function renderizarProdutos(lista) {
+    const container = document.querySelector(".produtos");
+    container.innerHTML = ""; 
+
+    lista.forEach(produto => {
+        const li = document.createElement("li");
+        li.classList.add("card");
+
+        li.innerHTML = `
+            <div class="card-img-container">
+                <img class="card-img" src="${produto.img}" alt="${produto.nome}">
+            </div>
+
+            <div class="card-content">
+                <h3 class="card-titulo">${produto.nome}</h3>
+                <div class="card-preco-container">
+                    <p class="card-preco">R$ ${produto.preco.toFixed(2)}</p>
+                </div>
+            </div>
+
+            <button class="card-btn" onclick="abrirProduto(${produto.id})">Ver detalhes</button>
+        `;
+
+        container.appendChild(li);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    renderizarProdutos(produtos);
+});
+
+
+
+
+

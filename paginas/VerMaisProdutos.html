@@ -4,51 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PANIC PRE WORKOUT 300G</title>
-    <link rel="stylesheet" href="/css/inicioProdutos.css">
-    <link rel="stylesheet" href="/css/verMaisProdutos.css">
-    <link rel="stylesheet" href="/css/Admin/administrador.css">
-    <link rel="stylesheet" href="/css/Interface/footer.css">
-    <link rel="stylesheet" href="/css/Interface/header.css">
-    <script src="js/inicio.js"></script>
-    <script src="js/verMais.js"></script>
-    <script src="js/Admin/administrador.js"></script>
-    <script src="js/funcoes/buscaProdutos.js"></script>
-    <script src="js/funcoes/filtroProdutos.js"></script>
+    <title>Ver Produto</title>
+
+    <link rel="stylesheet" href="../css/inicioProdutos.css">
+    <link rel="stylesheet" href="../css/verMaisProdutos.css">
+    <link rel="stylesheet" href="../css/Admin/administrador.css">
+    <link rel="stylesheet" href="../css/Interface/footer.css">
+    <link rel="stylesheet" href="../css/Interface/header.css">
+
+    <script src="../js/Admin/produtos.js"></script>
+    <script src="../js/verMais.js"></script>
 </head>
 
 <body>
+
     <section class="container1">
         <div class="ladoesquerdo">
-            <div class="imgaux">
-                <img src="/img/3_nutri.jpg">
-                <img src="/img/3_nutri.jpg">
-                <img src="/img/3_nutri.jpg">
-            </div>
+
+            <div class="imgaux" id="imagens-aux"></div>
 
             <div class="imgprinc">
-                <img src="/img/3.jpg">
+                <img id="imagem-principal" src="">
             </div>
+
         </div>
+
         <section class="ladodireito">
             <div>
-                <h1>100% PURE WHEY</h1>
+                <h1 id="produto-nome"></h1>
                 <br>
-                <div class = "box">
-                    <p style="color: rgb(93, 91, 91);">pinto penis bosta</p>
-                </div>
-                <div class='box'>
-                     <p>R$ 200.000,00 social credits</p>
-                </div>
-                <div class="box"
-                
 
-                   <a href="" ><button class="botao">Fazer pedido</button></a>
+                <div class="box">
+                    <p id="produto-descricao" style="color: rgb(93, 91, 91);"></p>
+                </div>
+
+                <div class="box">
+                    <p id="produto-preco"></p>
+                </div>
+
+                <div class="box">
+                    <button class="botao" id="botao-pedido">Fazer pedido</button>
                 </div>
             </div>
-
         </section>
     </section>
-</body>
 
+</body>
 </html>

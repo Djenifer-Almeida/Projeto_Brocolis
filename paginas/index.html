@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brocolís</title> <!-- CSS -->
+    <title>Brocolís</title>
     <link rel="stylesheet" href="/css/inicioProdutos.css">
     <link rel="stylesheet" href="/css/Interface/footer.css">
     <link rel="stylesheet" href="/css/Interface/filtroInicio.css">
-    <link rel="stylesheet" href="/css/Interface/header.css"> 
-    <script src="js/inicio.js"></script>
+    <link rel="stylesheet" href="/css/Interface/header.css">
     <script src="js/funcoes/buscaProdutos.js"></script>
     <script src="js/funcoes/filtroProdutos.js"></script>
+
+    <script src="/js/Admin/produtos.js"></script>
+    <script src="/js/inicio.js"></script>
 </head>
 
-<body> 
+<body>
     <button class="mobile-toggle" id="mobileToggle">Filtros</button>
     <div class="sidebar-container" id="sidebar">
         <div class="sidebar-header">
@@ -56,12 +58,12 @@
                     <input type="checkbox" value="3vs"> <span class="custom-checkbox"></span> <span>3VS</span> </label>
             </div>
         </div>
-       
+
     </div>
- <header class="header">
+    <header class="header">
         <div class="header-left">
             <img src="/img/produtos/Logo.jpg" alt="Logo Brocolís" class="header-logo">
-            
+
             <div class="search-container">
                 <input type="text" placeholder="Pesquisar produtos..." class="header-search">
                 <button class="search-btn">
@@ -77,9 +79,6 @@
         </div>
 
         <div class="header-right">
-            
-          
-            
             <button class="mobile-menu-btn">
                 <span class="material-icons">menu</span>
             </button>
@@ -89,132 +88,12 @@
 
     <div class="conteudo">
         <main class="cards-area">
-            <ul class="produtos">
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/1.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">CREATINA MAX TITANIUM 300G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 99,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/1e2.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">100% WHEY MAX TITANIUM 900G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 139,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/2.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">HÓRUS PRÉ WORKOUT 300G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 124,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/3.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">PANIC PRE WORKOUT 300G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 134,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/4.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">WHEY DUX CONCENTRADO 900G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 199,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/5.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">DR. PEANUT 600G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 59,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/6.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">TASTY WHEY ADAPTOGEN 900G</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 199,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/7.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">BLACK MACA COLOR ANDINA 60 CAPS</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 89,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/8.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">100% PURE WHEY ZERO LACTOSE</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 189,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/9.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">Creatina Dark Lab</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 85,00</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/010.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">Creatina Lion 300g</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 99,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-                <li class="card">
-                    <div class="card-img-container"> <img class="card-img" src="/img/produtos/011.jpg" alt="Produto">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-titulo">Creatina 3VS 300g</h3>
-                        <div class="card-preco-container">
-                            <p class="card-preco">R$ 89,90</p>
-                        </div>
-                    </div> <button class="card-btn">Ver detalhes</button>
-                </li>
-            </ul>
+            <ul class="produtos"></ul>
         </main>
     </div>
     <footer>
-        <div class="informacao"> <img src="/img/produtos/Logo.jpg" alt="Logo"> CNPJ: 52.311.324/0001-44<br> AV. DJALMA BATISTA,
+        <div class="informacao"> <img src="/img/produtos/Logo.jpg" alt="Logo"> CNPJ: 52.311.324/0001-44<br> AV. DJALMA
+            BATISTA,
             2.100, CHAPADA, Manaus - AM, 69050-972<br> Todos os direitos reservados </div>
         <div class="contato"> <strong>Entre em contato conosco:</strong><br> <a
                 href="https://www.instagram.com/nabrocolis" target="_blank" rel="noopener"> <img
@@ -222,5 +101,6 @@
                 target="_blank" rel="noopener"> <img src="/img/icons/wpp.jpg" alt="WhatsApp" class="imagem"> </a> </div>
     </footer>
 </body>
+
 
 </html>
